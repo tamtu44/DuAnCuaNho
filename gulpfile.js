@@ -22,8 +22,8 @@ const config = {
   buildCss: 'build/css',
   srcJs: 'src/js/*.js',
   buildJs: 'build/js',
-  srcImg: 'src/img/*',
-  buildImg: 'build/img',
+  srcImg: 'src/images/*',
+  buildImg: 'build/images',
 };
 
 // - Config style
@@ -84,8 +84,8 @@ gulp.task('browser-sync', () => {
       routes: {
         '/node_modules': 'node_modules',
         '/css': 'build/css',
-        '/img': 'build/img',
         '/js': 'build/js',
+        '/images': 'build/images',
       },
     },
   });
